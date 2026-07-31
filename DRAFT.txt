@@ -1,0 +1,6 @@
+def get_curvature()
+
+for points :
+	# si le rayon de courbure au voisinage d'un point est le meme alors ils sont dans la même courbe (a priori)
+	if curvature[point[-1]]==curvature[point] and curvature[point[+1]]==curvature[point] within a certain tol:
+		curves['curve1'].append(point)
