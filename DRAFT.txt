@@ -4,3 +4,8 @@ for points :
 	# si le rayon de courbure au voisinage d'un point est le meme alors ils sont dans la même courbe (a priori)
 	if curvature[point[-1]]==curvature[point] and curvature[point[+1]]==curvature[point] within a certain tol:
 		curves['curve1'].append(point)
+
+1) calcul de la coubure locale sur la courbe :
+2) si changement trop brusque (calculer la dérivée, si pente trop grande alors changement) alors detection d'une nouvelle portion de courbe
+3) Pour chaque courbe isolée, détecter si c'est une droite ou un cercle (on superpose un cercle ou une droite et on calcul la RMS de la distance à cette courbe, plus c'est faible, mieux c'est)
+4) Trouver le best_fit droites et cercle via un algo d'optimisation (droite facile, mais cercle plus chiant)
