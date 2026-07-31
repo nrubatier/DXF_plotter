@@ -55,3 +55,4 @@ y_smooth = savgol_filter(y_dense, window_length=2, polyorder=1)
 
 # calculer la courbure pour chaque point avec les X points au voisinage. Si changement trop brusque de courbure, regarder la courbures de dx points avant et après pour voir si c'est vraiment
 # un changement de forme ou si c'est juste un bruit.
+#  ou alors calculer la courbure à droite et à gauche sur X points a gauche te X points a droite, si changement, alors regarder un peu plus loin à droite pour voir si c'est pas du bruit
